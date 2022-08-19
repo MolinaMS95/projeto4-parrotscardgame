@@ -4,124 +4,131 @@
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <title>Parrot Card Game</title>
-        <link rel="stylesheet" href="reset.css">
-        <link rel="stylesheet" href="estilo.css">
+        <link rel="stylesheet" href="./reset.css">
+        <link rel="stylesheet" href="./estilo.css">
     </head>
     <body>
-        <h1>PARROT CARD GAME</h1>
-        <div class="container">
-            <div class="carta" onclick="virarCarta(this)">
-                <div class="front face">
-                    <img src="imagens/front.png"/>
-                </div>
-                <div class="back face">
-                    <img class="parrot1" src="imagens/bobrossparrot.gif"/>
-                </div>
+        <div class="content">
+            <header>
+                <h1>PARROT CARD GAME</h1>
+            </header>
+            <div class="counter">
+                0
             </div>
-            <div class="carta" onclick="virarCarta(this)">
-                <div class="front face">
-                    <img src="imagens/front.png"/>
+            <main class="board">
+                <div class="card" onclick="turnCard(this)">
+                    <div class="front face">
+                        <img src="imagens/front.png" alt="papagaio verde"/>
+                    </div>
+                    <div class="back face">
+                        <img class="parrot1" src="imagens/bobrossparrot.gif" alt="gif do papagaio bob ross"/>
+                    </div>
                 </div>
-                <div class="back face">
-                    <img class="parrot1" src="imagens/bobrossparrot.gif"/>
+                <div class="card" onclick="turnCard(this)">
+                    <div class="front face">
+                        <img src="imagens/front.png" alt="papagaio verde"/>
+                    </div>
+                    <div class="back face">
+                        <img class="parrot1" src="imagens/bobrossparrot.gif" alt="gif do papagaio bob ross"/>
+                    </div>
                 </div>
-            </div>
-            <div class="carta" onclick="virarCarta(this)">
-                <div class="front face">
-                    <img src="imagens/front.png"/>
+                <div class="card" onclick="turnCard(this)">
+                    <div class="front face">
+                        <img src="imagens/front.png" alt="papagaio verde"/>
+                    </div>
+                    <div class="back face">
+                        <img class="parrot2" src="imagens/explodyparrot.gif" alt="gif do papagaio explosivo"/>
+                    </div>
                 </div>
-                <div class="back face">
-                    <img class="parrot2" src="imagens/explodyparrot.gif"/>
+                <div class="card" onclick="turnCard(this)">
+                    <div class="front face">
+                        <img src="imagens/front.png" alt="papagaio verde"/>
+                    </div>
+                    <div class="back face">
+                        <img class="parrot2" src="imagens/explodyparrot.gif" alt="gif do papagaio explosivo"/>
+                    </div>
                 </div>
-            </div>
-            <div class="carta" onclick="virarCarta(this)">
-                <div class="front face">
-                    <img src="imagens/front.png"/>
+                <div class="card" onclick="turnCard(this)">
+                    <div class="front face">
+                        <img src="imagens/front.png" alt="papagaio verde"/>
+                    </div>
+                    <div class="back face">
+                        <img class="parrot3" src="imagens/fiestaparrot.gif" alt="gif do papagaio fiesta"/>
+                    </div>
                 </div>
-                <div class="back face">
-                    <img class="parrot2" src="imagens/explodyparrot.gif"/>
+                <div class="card" onclick="turnCard(this)">
+                    <div class="front face">
+                        <img src="imagens/front.png" alt="papagaio verde"/>
+                    </div>
+                    <div class="back face">
+                        <img class="parrot3" src="imagens/fiestaparrot.gif" alt="gif do papagaio fiesta"/>
+                    </div>
                 </div>
-            </div>
-            <div class="carta" onclick="virarCarta(this)">
-                <div class="front face">
-                    <img src="imagens/front.png"/>
+                <div class="card" onclick="turnCard(this)">
+                    <div class="front face">
+                        <img src="imagens/front.png" alt="papagaio verde"/>
+                    </div>
+                    <div class="back face">
+                        <img class="parrot4" src="imagens/metalparrot.gif" alt="gif do papagaio metal"/>
+                    </div>
                 </div>
-                <div class="back face">
-                    <img class="parrot3" src="imagens/fiestaparrot.gif"/>
+                <div class="card" onclick="turnCard(this)">
+                    <div class="front face">
+                        <img src="imagens/front.png" alt="papagaio verde"/>
+                    </div>
+                    <div class="back face">
+                        <img class="parrot4" src="imagens/metalparrot.gif" alt="gif do papagaio metal"/>
+                    </div>
                 </div>
-            </div>
-            <div class="carta" onclick="virarCarta(this)">
-                <div class="front face">
-                    <img src="imagens/front.png"/>
+                <div class="card" onclick="turnCard(this)">
+                    <div class="front face">
+                        <img src="imagens/front.png" alt="papagaio verde"/>
+                    </div>
+                    <div class="back face">
+                        <img class="parrot5" src="imagens/revertitparrot.gif" alt="gif do papagaio marinheiro"/>
+                    </div>
                 </div>
-                <div class="back face">
-                    <img class="parrot3" src="imagens/fiestaparrot.gif"/>
+                <div class="card" onclick="turnCard(this)">
+                    <div class="front face">
+                        <img src="imagens/front.png" alt="papagaio verde"/>
+                    </div>
+                    <div class="back face">
+                        <img class="parrot5" src="imagens/revertitparrot.gif" alt="gif do papagaio marinheiro"/>
+                    </div>
                 </div>
-            </div>
-            <div class="carta" onclick="virarCarta(this)">
-                <div class="front face">
-                    <img src="imagens/front.png"/>
+                <div class="card" onclick="turnCard(this)">
+                    <div class="front face">
+                        <img src="imagens/front.png" alt="papagaio verde"/>
+                    </div>
+                    <div class="back face">
+                        <img class="parrot6" src="imagens/tripletsparrot.gif" alt="gif do papagaio triplo"/>
+                    </div>
                 </div>
-                <div class="back face">
-                    <img class="parrot4" src="imagens/metalparrot.gif"/>
+                <div class="card" onclick="turnCard(this)">
+                    <div class="front face">
+                        <img src="imagens/front.png" alt="papagaio verde"/>
+                    </div>
+                    <div class="back face">
+                        <img class="parrot6" src="imagens/tripletsparrot.gif" alt="gif do papagaio triplo"/>
+                    </div>
                 </div>
-            </div>
-            <div class="carta" onclick="virarCarta(this)">
-                <div class="front face">
-                    <img src="imagens/front.png"/>
+                <div class="card" onclick="turnCard(this)">
+                    <div class="front face">
+                        <img src="imagens/front.png" alt="papagaio verde"/>
+                    </div>
+                    <div class="back face">
+                        <img class="parrot7" src="imagens/unicornparrot.gif" alt="gif do papagaio unicórnio"/>
+                    </div>
                 </div>
-                <div class="back face">
-                    <img class="parrot4" src="imagens/metalparrot.gif"/>
+                <div class="card" onclick="turnCard(this)">
+                    <div class="front face">
+                        <img src="imagens/front.png" alt="papagaio verde"/>
+                    </div>
+                    <div class="back face">
+                        <img class="parrot7" src="imagens/unicornparrot.gif" alt="gif do papagaio unicórnio"/>
+                    </div>
                 </div>
-            </div>
-            <div class="carta" onclick="virarCarta(this)">
-                <div class="front face">
-                    <img src="imagens/front.png"/>
-                </div>
-                <div class="back face">
-                    <img class="parrot5" src="imagens/revertitparrot.gif"/>
-                </div>
-            </div>
-            <div class="carta" onclick="virarCarta(this)">
-                <div class="front face">
-                    <img src="imagens/front.png"/>
-                </div>
-                <div class="back face">
-                    <img class="parrot5" src="imagens/revertitparrot.gif"/>
-                </div>
-            </div>
-            <div class="carta" onclick="virarCarta(this)">
-                <div class="front face">
-                    <img src="imagens/front.png"/>
-                </div>
-                <div class="back face">
-                    <img class="parrot6" src="imagens/tripletsparrot.gif"/>
-                </div>
-            </div>
-            <div class="carta" onclick="virarCarta(this)">
-                <div class="front face">
-                    <img src="imagens/front.png"/>
-                </div>
-                <div class="back face">
-                    <img class="parrot6" src="imagens/tripletsparrot.gif"/>
-                </div>
-            </div>
-            <div class="carta" onclick="virarCarta(this)">
-                <div class="front face">
-                    <img src="imagens/front.png"/>
-                </div>
-                <div class="back face">
-                    <img class="parrot7" src="imagens/unicornparrot.gif"/>
-                </div>
-            </div>
-            <div class="carta" onclick="virarCarta(this)">
-                <div class="front face">
-                    <img src="imagens/front.png"/>
-                </div>
-                <div class="back face">
-                    <img class="parrot7" src="imagens/unicornparrot.gif"/>
-                </div>
-            </div>
+            </main>
         </div>
         <script src="script.js"></script>
     </body>

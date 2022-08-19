@@ -7,34 +7,55 @@ h1{
     font-weight: 700;
     font-size: 56px;
     color: #75B79E;
+
     text-align: center;
     margin-top: 40px;
 }
-.container{
+.content{
+    position: relative;
+}
+.counter{
+    font-size: 30px;
+    color:red;
+
+    position: absolute;
+    top: 20px;
+    right: 0px;
+}
+.content, .board{
     width: 1035px;
-    margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
+}
+.board, .face{
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
+}
+.board{
+    margin-top: 50px;
+    
+    flex-wrap: wrap;
+    
     gap: 34px;
 }
-.carta{
+.card{
     width: 117px;
     height: 146px;
+
     position: relative;
 }
 .face{
     width: 100%;
     height: 100%;
+
     background-color: #A7E9AF;
     border: solid 1px #99CEA8;
     border-radius: 5px;
-    display: flex;
-    justify-content: center;
+
     align-items: center;
+
     position: absolute;
+
     backface-visibility: hidden;
     transition: all .5s;
     transform-style: preserve-3d;
@@ -42,10 +63,7 @@ h1{
 .back{
     transform: rotateY(180deg);
 }
-.backVirado{
-    transform: rotateY(0deg);
-}
-.frontVirado{
+.turnedFront{
     transform: rotateY(-180deg);
 }
 img{
@@ -54,8 +72,9 @@ img{
 }
 
 @media (max-width: 1030px){
-    .container{
+    .content, .board{
         width: 100%;
+        margin-bottom: 30px;
     }
     h1{
         font-size: 36px;
