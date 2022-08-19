@@ -42,11 +42,10 @@ h1{
 .back{
     transform: rotateY(180deg);
 }
-.carta:hover .back{
+.backVirado{
     transform: rotateY(0deg);
 }
-
-.carta:hover .front{
+.frontVirado{
     transform: rotateY(-180deg);
 }
 img{
@@ -57,5 +56,8 @@ img{
 @media (max-width: 1030px){
     .container{
         width: 100%;
+    }
+    h1{
+        font-size: 36px;
     }
 }
