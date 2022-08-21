@@ -11,7 +11,9 @@ h1{
     text-align: center;
     margin-top: 40px;
 }
-.content{
+.topBox{
+    height: 110px;
+
     position: relative;
 }
 .counter{
@@ -19,10 +21,10 @@ h1{
     color:red;
 
     position: absolute;
-    top: 20px;
+    bottom: 20px;
     right: 0px;
 }
-.content, .board{
+.topBox, .board{
     width: 1035px;
     margin-left: auto;
     margin-right: auto;
@@ -32,8 +34,6 @@ h1{
     justify-content: center;
 }
 .board{
-    margin-top: 50px;
-    
     flex-wrap: wrap;
     
     gap: 34px;
@@ -72,7 +72,7 @@ img{
 }
 
 @media (max-width: 1030px){
-    .content, .board{
+    .topBox, .board{
         width: 100%;
         margin-bottom: 30px;
     }
