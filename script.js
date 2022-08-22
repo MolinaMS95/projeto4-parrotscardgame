@@ -3,6 +3,8 @@ let clicks = 0;
 
 let time = 0;
 
+let idInterval;
+
 function comparador() { 
 	return Math.random() - 0.5; 
 }
@@ -32,7 +34,7 @@ function setup(){
     for(let i = 0;i<deck.length;i++){
         cards.insertAdjacentElement('beforeend', deck[i]);
     }
-    setInterval(chronometer, 1000);
+    idInterval = setInterval(chronometer, 1000);
 }
 setup();
 
@@ -84,6 +86,7 @@ function win(){
     let unturnedCards = document.querySelector('.back');
     if(unturnedCards == null){
         alert(`Você ganhou em ${clicks} jogadas e ${time} segundos!`);
+        clearInterval(idInterval);
         let answer = prompt('Gostaria de jogar novamente?');
         while(answer !== 'sim' && answer !== 'não'){
             answer = prompt('Gostaria de jogar novamente?');
